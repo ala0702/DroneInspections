@@ -1,0 +1,400 @@
+/* .carousel-item{
+    height: 3000px;
+}  */
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* Fonts */
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+
+
+body
+.display-1 {
+  font-size: 3.5rem; /* Dopasuj rozmiar według potrzeb */
+}
+
+.display-2 {
+  font-size: 3rem; /* Dopasuj rozmiar według potrzeb */
+}
+
+.display-3 {
+  font-size: 2rem; /* Dopasuj rozmiar według potrzeb */
+}
+
+.display-4 {
+  font-size: 2.2rem; /* Dopasuj rozmiar według potrzeb */
+}
+
+/* Nadpisanie innych domyślnych stylów Bootstrap */
+h1 {
+  font-size: 2rem; /* Dopasuj rozmiar według potrzeb */
+}
+
+h2 {
+  font-size: 1.6rem; /* Dopasuj rozmiar według potrzeb */
+}
+
+h3 {
+  font-size: 1.55rem; /* Dopasuj rozmiar według potrzeb */
+}
+
+h4 {
+  font-size: 1.3rem; /* Dopasuj rozmiar według potrzeb */
+}
+
+h5 {
+  font-size: 1.25rem; /* Dopasuj rozmiar według potrzeb */
+}
+
+h6 {
+  font-size: 1rem; /* Dopasuj rozmiar według potrzeb */
+}
+
+a {
+  text-decoration: none; /* Usuwa podkreślenie */
+  color: inherit; /* Dziedziczy kolor tekstu */
+}
+
+
+@media (max-width: 768px) {
+  .sun {
+    opacity: 0.1; /* Ustawienie przezroczystości na 50% */
+  }
+}
+
+@media (max-width: 768px) {
+  #btn-contact.px-4 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+
+
+
+
+/* navbar */
+.navbar-nav .nav-item .nav-link {
+  font-size: 18px; /* Ustaw rozmiar czcionki według potrzeb */
+}
+
+/* Zmiana rozmiaru czcionki przycisku Contact */
+.navbar #btn-contact .btn {
+  font-size: 18px !important; 
+}
+
+
+/* index carousel */
+.carousel-item .img-carousel {
+  height: 700px;
+  object-fit: cover;
+}
+
+.carousel-text {
+  z-index: 20;
+  margin-top: 2.8rem;
+  text-shadow: 2px 2px 4px rgba(146, 145, 145, 0.4); /* Cień */
+}
+
+.img-break {
+  height: 480px;
+  object-fit: cover;
+}
+
+.img-card-home {
+  object-fit: cover; /* Zapewnia, że obrazek będzie wypełniał całą przestrzeń, zachowując proporcje */
+  width: 100%; /* Ustawia szerokość zdjęcia na 100% */
+  height: 400px; /* Ustawia wysokość zdjęcia na 200px, możesz dostosować wysokość według preferencji */
+  border-radius: 8px; /* Dodaje zaokrąglenie rogów dla estetyki */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Dodaje cień dla efektu wypukłości */
+  transition: transform 0.3s ease; /* Dodaje płynne przejście, gdy kursor najedzie na obrazek */
+}
+
+@media (max-width: 768px) {
+  /* Dodanie zapytania media dla mniejszych ekranów */
+  .img-card-home {
+    height: 200px; /* Dostosowanie wysokości dla mniejszych ekranów */
+  }
+  .card-small {
+    margin-top: 2rem;
+  }
+
+  .img-break {
+    height: 100px;
+    object-fit: cover;
+  }
+}
+
+.img-card-home:hover {
+  transform: scale(1.05);
+}
+
+.no-xmargin {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-xpadding {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* Image small index */
+.row {
+  justify-content: center;
+}
+.small-logo {
+  margin-bottom: 20px;
+  width: 10rem;
+}
+
+/* ABOUT */
+@media (max-width: 768px) {
+  .card-body h2 {
+      font-size: 1.3rem;
+  }
+}
+
+
+/* MISSION */
+.container-fluid.position-relative {
+    overflow: hidden;
+    height: 38em;
+}
+
+.about-image-section {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.7) contrast(1.2) grayscale(0.5); /* Filtry poprawiające wygląd obrazka */
+    transition: filter 0.5s ease-in-out; /* Animacja zmiany filtrów */
+}
+
+.about-image-section:hover {
+    filter: brightness(1) contrast(1.2) grayscale(0.3); /* Dodatkowe filtry przy najechaniu myszką */
+}
+
+#mission {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Tło sekcji z lekką przezroczystością */
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Cień */
+    transition: background-color 0.5s ease-in-out, transform 1.5s ease-in-out; /* Animacje zmiany tła i pozycji */
+}
+
+#mission:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Zmiana tła przy najechaniu myszką */
+    transform: translate(-50%, -50%) scale(1.05); /* Powiększenie przy najechaniu myszką */
+}
+
+@media (max-width: 768px) {
+    #mission {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+/* Dodatkowy CSS dla sekcji Vision */
+
+#vision {
+    position: relative;
+  }
+  
+  /* Tekst w sekcji */
+  #vision .section-title,
+  #vision .section-description {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Obraz w sekcji */
+  #vision img {
+    filter: brightness(80%) contrast(120%);
+    transition: filter 0.5s ease;
+  }
+
+ 
+  
+  /* Animacja dla tekstu */
+  #vision .section-title,
+  #vision .section-description {
+    animation: fadeInUp 1s forwards;
+  }
+  
+  /* Animacja dla obrazu */
+  #vision img {
+    animation: fadeInRight 1s forwards;
+  }
+  
+  .bg-image-vision {
+    background-image: url("../img/about/agreement.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.logo_bg::before {
+    content: "";
+    width: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(114, 68, 68, 0.8), rgba(255,255,255,0.5));
+}
+
+
+  /* Definicje animacji */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .sun {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 20% 50%, #ffd700, transparent);
+    position: absolute;
+    top: 48%;
+    left: 70%;
+    animation: rotateSun 16s linear infinite;
+  }
+.sun:before,
+.sun:after,
+.sun:before,
+.sun:after {
+  content: url("../img/about/drone.png");
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  width: 3px;
+  height: 50px;
+  width: 30px; /* Nowa szerokość obrazka */
+  height: 30px; /* Nowa wysokość obrazka */
+
+  background-size: cover; /* Dopasowuje obrazek, aby wypełnić całe tło */
+  transform: scale(0.23); /* Zmniejszenie obrazka o 50% */
+
+}
+
+  @keyframes rotateSun {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+  .img-card-about {
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+  }
+  .img-card-about:hover {
+    transform: scale(1.05); 
+  }
+
+
+  .button-mark {
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(51, 50, 50, 0.296); 
+    transition: transform 0.3s ease; 
+  }
+  .button-mark:hover {
+    transform: scale(1.05); 
+  }
+
+
+/* EQYUIPMENT  */
+.equipment .carousel-control-prev,
+.carousel-control-next {
+    color: red; /* Ustawienie koloru przycisków na czerwony */
+} 
+.intro-section {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0; /* Dopasuj w zależności od potrzeb */
+  text-align: center;
+}
+
+
+/* carousel .equipment */
+
+/* .carousel-control-prev, .carousel-control-next {
+  background-color: rgba(239, 216, 202, 0.3); 
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); 
+} */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+/* details */
+
+.drone-details ul li {
+  font-size: 14px; /* Możesz dostosować wielkość czcionki do preferencji */
+}
+
+/* styles.css */
+/* Add your custom styles here */
+
+.drone-details h2 {
+  border-bottom: 2px solid #333;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+
+
+/* Footer Styling */
+.footer {
+  background: linear-gradient(180deg, #464648 0%, #2c2d37 100%);
+  /* background: linear-gradient(180deg, #0f0c29 0%, #24243e 100%); */
+  color: #fff;
+}
+
+.footer h5 {
+  border-bottom: 1px solid #2b2a2a;
+  padding-bottom: 5px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+
+
+
+  

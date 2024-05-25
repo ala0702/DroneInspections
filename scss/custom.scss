@@ -1,0 +1,128 @@
+//main palletes
+$primary: #586e9a;
+$secondary: #02457a;
+$success: #969696;
+$info: #65c570;
+$warning: #76290B;
+$danger: #8f280b;
+$light: #F3F2F3;
+$dark: #453837;
+
+// my colors
+
+$mediumBlue: #557EA2;
+$darkGreyishBlue:#2E394B;
+$lightBeige: #DFD1BB;
+$mediumBeige: #AF9274;
+$nightSky: #343540;
+$deepBlue: #2E4663;
+$lightGrayishBlue: #9AB3CA;
+//$gradient: #45435C / #586E9A;
+
+
+$orange: #FFA500;
+$dark-orange: #e68003;
+$chocolate: #D2691E;
+
+$gold: #dfbf0a;
+$saffron: #FFC300;
+
+$sea-green: #2E8B57;
+$dark-green: #006400;
+$dark-olive-green: #495c29;
+
+$gray: #808080;
+$dark-gray: #A9A9A9;
+$dim-gray: #696969;
+
+$beige: #F5F5DC;
+$tan: #D2B48C;
+$wheat: #F5DEB3;
+
+$saddle-brown: #8B4513;
+$brown: #A52A2A;
+$olive-green: #556B2F; // Note: Same as DarkOliveGreen above, consider renaming.
+
+$white: #FFFFFF;
+$white-smoke: #F5F5F5;
+$snow: #FAFAFA;
+
+
+
+$clody: #Ada59c;
+
+// @font-face {
+//     font-family: 'DMS';
+//     src: url('../assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf') format('true type'),
+//     /* Add additional src lines for other font file formats if needed */
+//   }
+  
+// // Override Bootstrap's default font-family variable
+// $font-family-base: 'DMS', sans-serif;
+
+//
+//$carousel-transition-duration: 2.5s;
+
+.bg-white-smoke{
+background-color: #F5F5F5; ;
+}
+.bg-mediumBlue {
+    background-color: #557EA2;
+  }
+  
+  .bg-darkGreyishBlue {
+    background-color: #2E394B;
+  }
+  
+  .bg-lightBeige {
+    background-color: #DFD1BB;
+  }
+  
+  .bg-mediumBeige {
+    background-color: #AF9274;
+  }
+  
+  .bg-nightSky {
+    background-color: #343540;
+  }
+  
+  .bg-deepBlue {
+    background-color: #2E4663;
+  }
+  
+  .bg-lightGrayishBlue {
+    background-color: #9AB3CA;
+  }
+
+  .bg-image-vision {
+    background-image: url('../assets/img/about/jaromir-kavan-vv-oEGlN-4E-unsplash.jpg')
+  }
+
+  .gradient-primary {
+    background-image: linear-gradient(to right, $primary, $secondary);
+}
+
+.gradient-info {
+    background-image: linear-gradient(to right, $info, $success);
+}
+
+.gradient-warning {
+    background-image: linear-gradient(to right, $warning, $danger);
+}
+
+.gradient-light {
+    background-image: linear-gradient(to right, $light, $dark);
+}
+
+.gradient-custom {
+    background-image: linear-gradient(to right, $lightGrayishBlue, $mediumBlue);
+}
+
+.gradient-lightBlue-beige {
+    background-image: linear-gradient(to bottom, $lightBeige, $lightGrayishBlue);
+}
+
+
+  
+
+@import '../node_modules/bootstrap/scss/bootstrap';

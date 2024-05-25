@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="assets/img/Daniel Ż_logo_transparentne.png"
+    />
+
+    <!-- REMIXICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      crossorigin=""
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/custom.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <!-- Bootstrap
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
+    <title>Horeb Drone Inspection</title>
+  </head>
+  <body>
+    <!-- <div class="container-fluid bg-lightBeige p-2 border-bottom">
+      <p class="text-center lead ">Świat technologii, gdzie precyzja spotyka się z innowacją a efektywność łączy się z ekologią.</p>
+    </div> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg bg-lightBeige navbar-fixed-top">
+        <div class="container-fluid p-2 ps-5">
+          <!-- logo -->
+          <a class="navbar-brand" href="index.html">
+            <!-- <span class="nav__logo-circle fs-4"><img src="assets/img/logo/Daniel Ż_logo_transparentne.png" alt="Mission Image" class=""></span> -->
+            <span class="nav__logo-name">
+              <img
+                src="assets/img/logo/Daniel Ż_logo_transparentne.png"
+                alt="Mission Image"
+                class=""
+                height="30px"
+            /></span>
+            <!-- <img src="assets/img/mission_image.jpg" alt="Mission Image" class="img-fluid rounded shadow"> -->
+          </a>
+          <!-- toggle button -->
+          <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item fs-4 px-1">
+                <a class="nav-link" href="about.html">O nas</a>
+              </li>
+              <li class="nav-item fs-4 px-1">
+                <a class="nav-link" href="why.html">Dlaczego warto?</a>
+              </li>
+              <li class="nav-item fs-4 px-1">
+                <a class="nav-link" href="equipment.html">Nasz sprzęt</a>
+              </li>
+
+              <li class="nav-item fs-4 px-1">
+                <a class="nav-link" href="services.html">Usługi i cennik</a>
+              </li>
+
+              <li class="nav-item fs-4 px-4" id="btn-contact">
+                <a
+                  class="btn btn-outline-primary fw-bold fs-4"
+                  type="button"
+                  href="contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CAROUSEL HERO PAGE -->
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-caption top-0 d-md-block carousel-text text-dark">
+        <h2 class="txt-slogan display-3 mb-3 fw-bold">Z góry widać lepiej!</h2>
+
+        <h3 class="mb-1 lead fs-4 text-sm">
+          Witaj w świecie innowacyjnych rozwiązań dla Twojego domu lub Twojej
+          działalności.
+        </h3>
+
+        <p class="text-sm position-absolute bottom-0 pb-3 mb-5 d-md-none">
+          W pełni profesjonalne inspekcje dronami.
+        </p>
+        <p class="text-sm fs-4 text-sm d-none d-md-block">
+          W pełni profesjonalne inspekcje dronami.
+        </p>
+
+        <p
+          class="position-absolute d-none d-md-block bottom-0 fs-4 mb-5 p-1 border-light border-bottom border-top text-sm"
+        >
+          Podejmujemy się inspekcji paneli słonecznych, farm fotowoltaicznych,
+          farm wiatrakowych oraz innych złożonych infrastruktur. Profesjonalizm
+          i innowacyjność gwarantowane!
+        </p>
+        <a
+          href="#next-section"
+          class="position-absolute d-md-none bottom-0 mb-4 translate-middle-x scroll-down-button"
+        >
+          <img
+            src="/node_modules/bootstrap-icons/icons/arrow-down.svg"
+            width="40"
+            height="20"
+            alt="Scroll down"
+          />
+        </a>
+      </div>
+
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="assets/img/drone_hover_lake (2).jpg"
+            class="d-block w-100 img-carousel"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/img/drone_hover_lake (3).jpg"
+            class="d-block w-100 img-carousel"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/img/home_page.jpg"
+            class="d-block w-100 img-carousel"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Profesjonalne inspekcje  -->
+    <div class="container-fluid bg-lightGrayishBlue py-5">
+      <div class="container">
+        <div class="row align-items-center no-gutters">
+          <div class="col-md-6 text-center">
+            <h1 class="display-4 text-center fw-bold">
+              Witaj w <strong class="border-bottom">Horeb.</strong>
+            </h1>
+            <p class="fs-4 lead">
+              Twoim zaufanym partnerze w dziedzinie termowizyjnych inspekcji
+              paneli fotowoltaicznych oraz dronowych badań multispektralnyc.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="assets/img/ikona_dom_przod.png"
+              alt="Obrazek 1"
+              class="img-fluid mb-3"
+            />
+          </div>
+          <div class="row shadow">
+            <h2 class="display-4 mb-4 text-center border-left">
+              Najwyższej Jakości Inspekcje Fotowoltaiczne i Multispektralne
+            </h2>
+            <img
+              src="assets/img/logo/Daniel Ż_logo_transparentne.png"
+              class="small-logo"
+            />
+          </div>
+          <div class="row align-items-center no-gutters">
+            <div class="col-md-6 pb-0 pt-0 top-0">
+              <img
+                src="assets/img/ikona_dom_gora.png"
+                alt="Obrazek 2"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-6 text-center">
+              <p class="fs-4 lead p-5 border-right">
+                Nasze usługi inspekcyjne oparte są na wykorzystaniu
+                najnowocześniejszych narzędzi, takich jak termowizja,
+                obrazowanie multispektralne, oraz drony wyposażone w
+                specjalistyczne kamery. Dzięki temu możemy zapewnić kompleksową
+                ocenę stanu technicznego Twoich paneli słonecznych oraz
+                infrastruktury, identyfikując wszelkie potencjalne problemy czy
+                uszkodzenia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid no-xpadding">
+      <img
+        src="assets/img/index/DJImatrice30Tmodel.webp"
+        alt=""
+        class="w-100 img-break"
+      />
+    </div>
+
+    <!-- WIATAJ -->
+    <div class="container-fluid bg-lightBeige py-5">
+      <div class="container">
+        <h1 class="display-4 pt-5 pb-4 fw-bold mx-5">
+          Odkryj korzyści inspekcji paneli słonecznych <br />
+          domu lub firmy
+        </h1>
+      </div>
+
+      <div class="container pb-4">
+        <div class="row pt-4">
+          <div class="col-md-7">
+            <p class="fs-5">
+              Czy zdajesz sobie sprawę, jak wiele korzyści może przynieść
+              regularna inspekcja paneli słonecznych? Dzięki naszym usługom
+              inspekcyjnym możesz poprawić efektywność i bezpieczeństwo swojego
+              systemu fotowoltaicznego.
+            </p>
+            <p class="fs-5 my-4 pb-2">
+              Jesteśmy tutaj, by pomóc Ci przekształcić wyzwania związane z
+              energią słoneczną w nowe możliwości. Nasze wysokiej jakości usługi
+              dostarczają niezbędne informacje, które pomogą Ci zoptymalizować
+              wydajność i bezpieczeństwo Twojego systemu.
+            </p>
+            <!-- Dodany przycisk "Dlaczego warto" -->
+            <a
+              href="why.html"
+              class="btn btn-lg px-5 py-3 btn-outline-primary mb-3 button-mark"
+              >Dlaczego warto</a
+            >
+          </div>
+          <div class="col-md-4">
+            <!-- Możesz dodać tutaj obrazek przedstawiający zespół lub firmę -->
+            <img
+              src="assets/img/panele_dach_czerwony.avif"
+              alt="Zespół"
+              class="img-fluid rounded mb-4"
+            />
+
+            <img
+              src="assets/img/index/DJImatrice30T.webp"
+              alt="Zespół"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEXT -->
+    <div class="container-fluid gradient-custom p-5">
+      <h1 class="display-3 text-center p-5">Czym się zajmujemy?</h1>
+      <div class="row p-5 pt-0">
+        <div class="col-md-4">
+          <div class="card" style="width: 100%">
+            <img
+              src="assets/img/panele_trawa_zoom.jpg"
+              class="card-img-top img-card-home"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Inspekcje paneli słonecznych.</h5>
+              <p class="card-text"></p>
+              <a
+                href="services.html"
+                class="btn btn-lg p-3 btn-primary button-mark"
+                >Dowiedz się więcej</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card-small" style="width: 100%">
+            <img
+              src="assets/img/farma_wiatrowa.jpg"
+              class="card-img-top img-card-home"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dronowe badania multispektralne</h5>
+              <p class="card-text"></p>
+              <a
+                href="services.html"
+                class="btn btn-lg p-3 btn-primary button-mark"
+                >Dowiedz się więcej</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card-small" style="width: 100%">
+            <img
+              src="assets/img/windmill.jpg "
+              class="card-img-top img-card-home"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Inspekcja farm wiatrowych</h5>
+              <p class="card-text">
+                <!-- Some quick example text to build on the card title and make up
+                the bulk of the card's content. -->
+              </p>
+              <a
+                href="services.html"
+                class="btn btn-lg p-3 btn-primary button-mark"
+                >Dowiedz się więcej</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <section class="container-fluid bg-lightGrayishBlue py-5">
+      <div class="container text-center py-5">
+        <h2 class="display-4 fw-bold">
+          Skontaktuj się z nami, aby uzyskać profesjonalną inspekcję!
+        </h2>
+        <p class="lead p-4">
+          Dowiedz się więcej o naszych usługach i skorzystaj z naszych
+          profesjonalnych rozwiązań.
+        </p>
+        <a
+          href="contact.html"
+          class="btn btn-lg px-5 py-3 btn-outline-primary button-mark"
+          >Skontaktuj się</a
+        >
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer bg-nightSky py-5 text-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Treść stopki -->
+            <h5>Nazwa firmy</h5>
+            <p>Adres firmy</p>
+            <p>Telefon: +48 123 456 789</p>
+            <p>Email: info@example.com</p>
+          </div>
+          <div class="col-md-6">
+            <!-- Dodatkowe linki lub informacje -->
+            <h5>Przydatne linki</h5>
+            <ul>
+              <li><a href="#" class="link-success">Polityka prywatności</a></li>
+              <li><a href="#" class="link-success">Warunki korzystania</a></li>
+              <li><a href="#" class="link-success">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  
+    <!-- <script src="assets/js/main.js"></script> -->
+  </body>
+</html>
